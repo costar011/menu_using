@@ -34,3 +34,14 @@ header {
     border-radius: 8px;
     z-index: -5;
 }
+
+header ul {
+    background: rgba(255, 255, 255, 0.116);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+
+    display: flex;
+    list-style: none;
+    transition: transform .4s;
+}
