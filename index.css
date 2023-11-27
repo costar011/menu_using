@@ -1,47 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arimo:wght@600&family=Lato&family=Lora:ital,wght@1,500&family=Merriweather:wght@300&family=Noto+Sans:wght@300;500&family=Open+Sans&family=Poppins:wght@200&family=Roboto:ital,wght@1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Arimo:wght@600&family=Lato&family=Lora:ital,wght@1,500&family=Merriweather:wght@300&family=Noto+Sans:wght@300;500&family=Open+Sans&family=Poppins:wght@200&family=Roboto:ital,wght@1,300&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background: #0f0f0f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height: 100vh;
-    font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
 }
 
 header {
-    position: relative;
+  position: relative;
 }
 
 .bg {
-    content: " ";
-    position: absolute;
-    top: 8px;
-    left: 50%;
+  content: " ";
+  position: absolute;
+  top: 8px;
+  left: 50%;
 
-    transform: translate(-50%);
-    width: 80%;
-    height: 100%;
-    background: #663399;
+  transform: translate(-50%);
+  width: 80%;
+  height: 100%;
+  background: #663399;
 
-    border-radius: 8px;
-    z-index: -5;
+  border-radius: 8px;
+  z-index: -5;
 }
 
 header ul {
-    background: rgba(255, 255, 255, 0.116);
-    padding: 10px;
-    border-radius: 10px;
-    backdrop-filter: blur(30px);
+  background: rgba(255, 255, 255, 0.116);
+  padding: 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(30px);
 
-    display: flex;
-    list-style: none;
-    transition: transform .4s;
+  display: flex;
+  list-style: none;
+  transition: transform 0.4s;
+}
+
+header ul:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.248);
+  transform: translateY(-5px);
+}
+
+header ul li {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+header ul li a {
+  text-decoration: none;
 }
